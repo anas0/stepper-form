@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- MultiStep Form -->
+		<div class="container-fluid" id="grad1">
+		    <div class="row justify-content-center mt-0">
+		        <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
+		            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+		                <h2><strong>নতুন তথ্য যুক্ত করুন</strong></h2>
+		                <p>Fill all form field to go to next step</p>
+		                <div class="row">
+		                    <div class="col-md-12 mx-0">
+		                        <form id="msform">
+		                            <!-- progressbar -->
+		                            <ul id="progressbar">
+		                                <li class="active" id="account"><strong>খতিয়াণের তথ্য</strong></li>
+		                                <li id="personal"><strong>দাগের তথ্য</strong></li>
+		                                <li id="payment"><strong>অধিগ্রহণের তথ্য</strong></li>
+		                                <li id="confirm"><strong>Finish</strong></li>
+		                            </ul> <!-- fieldsets -->
+		                            <fieldset>
+		                                <div class="form-card">
+		                                    <h2 class="fs-title">খতিয়াণের তথ্য</h2> 
+
+		                                    <div class="form-group">
+		                                     <label for="exampleFormControlSelect1">বিভাগের নাম:</label>
+		                                     <select class="form-control" id="exampleFormControlSelect1">
+		                                       <option selected>বিভাগ বাছাই করুন</option>
+		                                       <option value="1">One</option>
+		                                       <option value="2">Two</option>
+		                                       <option value="3">Three</option>
+		                                     </select>
+		                                    </div>
+
+		                                    <div class="form-group">
+		                                     <label for="exampleFormControlSelect2">কাচারীর নাম:</label>
+		                                     <select class="form-control" id="exampleFormControlSelect2">
+		                                       <option selected>কাচারী বাছাই করুন</option>
+		                                       <option value="1">One</option>
+		                                       <option value="2">Two</option>
+		                                       <option value="3">Three</option>
+		                                     </select>
+		                                    </div>
+
+		                                    <div class="form-group">
+		                                     <label for="exampleFormControlSelect3">জেলার নাম:</label>
+		                                     <select class="form-control" id="exampleFormControlSelect3">
+		                                       <option selected>জেলা বাছাই করুন</option>
+		                                       <option value="1">One</option>
+		                                       <option value="2">Two</option>
+		                                       <option value="3">Three</option>
+		                                     </select>
+		                                    </div>
+
+		                                    <div class="form-group">
+		                                     <label for="exampleFormControlSelect4">উপজেলার নাম:</label>
+		                                     <select class="form-control" id="exampleFormControlSelect4">
+		                                       <option selected>উপজেলা বাছাই করুন</option>
+		                                       <option value="1">One</option>
+		                                       <option value="2">Two</option>
+		                                       <option value="3">Three</option>
+		                                     </select>
+		                                    </div>
+
+		                                    <div class="form-group">
+		                                     <label for="exampleFormControlSelect5">স্টেশনের নাম:</label>
+		                                     <select class="form-control" id="exampleFormControlSelect5">
+		                                       <option selected>স্টেশন বাছাই করুন</option>
+		                                       <option value="1">One</option>
+		                                       <option value="2">Two</option>
+		                                       <option value="3">Three</option>
+		                                     </select>
+		                                    </div>
+
+		                                    <div class="form-group">
+		                                     <label for="exampleFormControlSelect6">মৌজার নাম:</label>
+		                                     <select class="form-control" id="exampleFormControlSelect6">
+		                                       <option selected>মৌজা বাছাই করুন</option>
+		                                       <option value="1">One</option>
+		                                       <option value="2">Two</option>
+		                                       <option value="3">Three</option>
+		                                     </select>
+		                                    </div>
+
+		                                    <div class="form-group">
+		                                     <label for="exampleFormControlSelect1">সেকশনের নাম:</label>
+		                                     <select class="form-control" id="exampleFormControlSelect1">
+		                                       <option selected>সেকশন বাছাই করুন</option>
+		                                       <option value="1">One</option>
+		                                       <option value="2">Two</option>
+		                                       <option value="3">Three</option>
+		                                     </select>
+		                                    </div>
+
+		                                    <div class="form-group">
+		                                     <label for="exampleFormControlSelect1">রেকর্ডের নাম:</label>
+		                                     <select class="form-control" id="exampleFormControlSelect1">
+		                                       <option selected>রেকর্ড বাছাই করুন</option>
+		                                       <option value="1">One</option>
+		                                       <option value="2">Two</option>
+		                                       <option value="3">Three</option>
+		                                     </select>
+		                                    </div>
+
+		                                    
+
+		                                    <input  type="text" name="uname" placeholder="খতিয়ান নং" /> 
+		                                    <input  type="text" name="uname" placeholder="নাম" />
+		                                    <input type="text" name="pwd" placeholder="ঠিকানা" /> 
+		                                    <input type="text" name="cpwd" placeholder="মন্তব্য" />
+
+		                                    <div class="form-group">
+		                                     <label for="exampleFormControlFile1">সংযুক্তি: </label>
+		                                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
+		                                    </div>
+
+		                                    <input type="text" name="cpwd" placeholder="ডাটা এন্ট্রির অপারেটরের মন্তব্য" />
+		                                </div> 
+		                                <input type="button" name="next" class="next action-button" value="Next Step" />
+		                            </fieldset>
+		                            <fieldset>
+		                                <div class="form-card">
+		                                    <h2 class="fs-title">দাগের তথ্য	</h2> 
+
+		                                    <input type="text" name="fname" placeholder="জমির দাগ" /> 
+
+		                                    <div class="form-group">
+		                                     <label for="exampleFormControlSelect1">জমির শ্রেণি  :</label>
+		                                     <select class="form-control" id="exampleFormControlSelect1">
+		                                       <option selected>জমির শ্রেণি </option>
+		                                       <option value="1">One</option>
+		                                       <option value="2">Two</option>
+		                                       <option value="3">Three</option>
+		                                     </select>
+		                                    </div>
+
+		                                    <input type="text" name="phno_2" placeholder="জমির পরিমাণ" />
+		                                    <input type="text" name="cpwd" placeholder="মন্তব্য" />
+		                                </div> 
+		                                <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
+		                                <input type="button" name="next" class="next action-button" value="Next Step" />
+		                            </fieldset>
+		                            <fieldset>
+		                                <div class="form-card">
+		                                    <h2 class="fs-title">অধিগ্রহণের তথ্য</h2>
+		                                    <input type="text" name="fname" placeholder="অধিগ্রহণ কেস / ডিক্লারেশন" />
+		                                    <input type="text" name="fname" placeholder="গেজেট  এর নাম" />
+		                                    <input type="text" name="fname" placeholder="পৃষ্ঠা নং" />
+
+		                                    <label for="date">গেজেট  এর তারিখ:</label>
+		                                    <input type="date" name="fname" id="date"/>
+		                                </div> 
+
+		                                <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
+		                                <input type="button" name="make_payment" class="next action-button" value="Confirm" />
+		                            </fieldset>
+		                            <fieldset>
+		                                <div class="form-card">
+		                                    <h2 class="fs-title text-center">Success !</h2> <br><br>
+		                                    <div class="row justify-content-center">
+		                                        <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
+		                                    </div> <br><br>
+		                                    <div class="row justify-content-center">
+		                                        <div class="col-7 text-center">
+		                                            <h5>You Have Successfully Fill The Form</h5>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                            </fieldset>
+		                        </form>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+
+
+		<script type="text/javascript"  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
